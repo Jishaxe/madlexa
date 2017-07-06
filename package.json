@@ -1,0 +1,23 @@
+{
+  "name": "madlexa",
+  "version": "1.0.0",
+  "description": "Madlibs for Alexa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jishaxe/madlexa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jishaxe/madlexa/issues"
+  },
+  "homepage": "https://github.com/Jishaxe/madlexa#readme",
+  "dependencies": {
+    "alexa-app": "^4.0.1",
+    "express": "^4.15.3"
+  }
+}
