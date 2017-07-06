@@ -8,9 +8,17 @@ app.intent("MakeMadlib", {
     "slots": { "Name": "AMAZON.GB_FIRST_NAM" },
     "utterances": ["make a story for {Name}"]
   },
+
   function(request, response) {
-      response.say("Making a story for " + request.slot("Name"))
+      let name = request.slot("Name")
+      if (!name) {
+          response.reprompt("You didn't specify a name. Please try again.")
+          return
+      }
+
+      response.say(`Generating a story for ${name}`)
   }
+  
 );
  
 // setup the alexa app and attach it to express before anything else 
