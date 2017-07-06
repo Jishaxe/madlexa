@@ -11,11 +11,6 @@ app.intent("MakeMadlib", {
 
   function(request, response) {
       let name = request.slot("Name")
-      if (!name) {
-          response.reprompt("You didn't specify a name. Please try again.")
-          return
-      }
-
       response.say(`Generating a story for ${name}`)
   }
   
