@@ -1,7 +1,7 @@
 var express = require("express");
 var alexa = require("alexa-app");
 var express_app = express();
- 
+const randomWord = require("random-word")
 var app = new alexa.app("madlexa");
  
 app.intent("MakeMadlib", {
@@ -14,7 +14,7 @@ app.intent("MakeMadlib", {
 
   function(request, response) {
       let name = request.slot("Name")
-      response.say(`Generating a story for ${name}`)
+      response.say(`It turns out that ${name} is a great big ${randomWord()}`)
   }
   
 );
