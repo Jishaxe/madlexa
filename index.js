@@ -6,7 +6,10 @@ var app = new alexa.app("madlexa");
  
 app.intent("MakeMadlib", {
     "slots": { "Name": "AMAZON.GB_FIRST_NAM" },
-    "utterances": ["make a story for {Name}"]
+    "utterances": ["make a story for {Name}"],
+    "dialog": {
+      type: "delegate"
+    },
   },
 
   function(request, response) {
