@@ -9,7 +9,7 @@ app.intent("MakeMadlib", {
     "utterances": ["make a story for {Name}"]
   },
   function(request, response) {
-      response.say("Making a story for " + request.slot("name"))
+      response.say("Making a story for " + request.slot("Name"))
   }
 );
  
